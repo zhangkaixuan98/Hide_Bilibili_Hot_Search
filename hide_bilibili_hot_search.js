@@ -2,10 +2,12 @@
 // @name         隐藏Bilibili热搜推荐
 // @namespace    https://github.com/zhangkaixuan98/
 // @version      1.0
-// @description  隐藏Bilibili热搜推荐
+// @description  Hide Bilibili Hot Search
+// @description:zh-cn  隐藏Bilibili热搜推荐
 // @author       zkx、ChatGPT
 // @homepageURL  https://github.com/zhangkaixuan98/Hide_Bilibili_Hot_Search/
 // @match        https://www.bilibili.com/*
+// @license MIT
 // @grant        none
 // @connect      zhangkaixuan98.github.io
 // @connect      raw.gitmirror.com
@@ -108,7 +110,7 @@
         } else {
             currentAttempt++;
             if (currentAttempt < maxAttempts) {
-                // 继续等待，每1秒检查一次
+                // 继续等待，每0.1秒检查一次
                 setTimeout(checkForSearchBar, 100);
             } else {
                 console.log("已达到最大尝试次数，搜索框热搜未出现");
